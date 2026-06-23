@@ -49,6 +49,9 @@ During early development stages using `eda.py`, a critical structural pattern wa
 
 The complete end-to-end data processing loop functions according to the following architecture:
 
+<img width="1280" height="877" alt="WhatsApp Image 2026-06-24 at 5 24 31 AM" src="https://github.com/user-attachments/assets/018fc2c7-5dbd-47aa-9907-28e0c3ae4360" />
+
+
 [ Conversational Natural Language Query ]
 │
 ▼
