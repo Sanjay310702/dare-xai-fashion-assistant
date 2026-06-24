@@ -1,6 +1,6 @@
 Markdown
 
-# 👔 Multimodal AI Fashion Outfit Recommendation System
+#  Multimodal AI Fashion Outfit Recommendation System
 
 An intelligent, enterprise-grade **Multi-Modal Conversational RAG (Retrieval-Augmented Generation) Fashion Assistant** engineered for the Dare XAI Machine Learning & AI Engineer Intern Assignment. 
 
@@ -8,7 +8,7 @@ This platform maps conversational natural language requests, user demographics, 
 
 ---
 
-## 🚀 Mapping Implementation to Assignment Requirements
+##  Mapping Implementation to Assignment Requirements
 
 This system delivers comprehensive, end-to-end compliance with all 5 core evaluation modules specified in the Dare XAI problem statement:
 
@@ -34,7 +34,7 @@ This system delivers comprehensive, end-to-end compliance with all 5 core evalua
 
 ---
 
-## 📊 Dataset Discoveries & Strategic Architecture Choices
+##  Dataset Discoveries & Strategic Architecture Choices
 
 During early development stages using `eda.py`, a critical structural pattern was discovered inside the provided data warehouse:
 * [cite_start]**Collection Profile**: 25 highly unique, curated designer outfit rows mapped across 22 individual attribute columns.
@@ -45,34 +45,16 @@ During early development stages using `eda.py`, a critical structural pattern wa
 
 ---
 
-## 🧠 High-Dimensional RAG Data Pipeline Workflow
+##  High-Dimensional RAG Data Pipeline Workflow
 
 The complete end-to-end data processing loop functions according to the following architecture:
 
-[ Conversational Natural Language Query ]
-│
-▼
-[ Side-Channel Profile Parameters ] ──► (Injects Gender, Age, & Style Persona State)
-│
-▼
-[ Semantic Query Concatenation Layer ]
-│
-▼
-[ Local Vector Dense Retrieval Match ] ──► (Sentence Transformers: all-MiniLM-L6-v2)
-│
-▼
-[ Context-Anchored Prompt Generation ] ──► (Binds Factual Inventory Data to Prompt)
-│
-▼
-[ Gemini Cognitive Inference Engine ]  ──► (API Stable Alias: gemini-flash-latest)
-│
-▼
-[ Multi-Modal Frontend Presentation ]  ──► (Renders Stylist Explanation + Parallel Images)
 
 
----
+<img width="1280" height="877" alt="flow diagram" src="https://github.com/user-attachments/assets/0cf1d87c-a938-4dfe-b507-6272196f3682" />
 
-## 🛠️ The System Optimization & Debug Ledger
+
+##  The System Optimization & Debug Ledger
 
 This section documents the chronological development hurdles encountered during the project assembly and the explicit technical fixes engineered to resolve them:
 
@@ -91,7 +73,7 @@ This section documents the chronological development hurdles encountered during 
 
 ---
 
-## 📁 Repository Directory Profile
+##  Repository Directory Profile
 
 The completed project repository features a clean, professional file architecture:
 ```text
@@ -126,7 +108,8 @@ ML-TASK/
 
         Coordinates image file arrays by splitting the semicolon-separated values found in image_files  via .split(';'). It validates asset existence locally using os.path.exists() and aligns components horizontally using dynamic column blocks (st.columns).  
 
-💻 Local Deployment & System Verification Guide
+<img width="1280" height="877" alt="flow diagram" src="https://github.com/user-attachments/assets/4cbfe793-98a5-4c27-908b-036cf0f92066" />
+ Local Deployment & System Verification Guide
 
 Follow these exact operational steps to deploy, run, and review the entire application pipeline on a local operating system:
 Step 1: Initialize Workspace & Environment Isolation
