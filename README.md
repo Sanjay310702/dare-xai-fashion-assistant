@@ -41,8 +41,16 @@ During early development stages using `eda.py`, a critical structural pattern wa
 * [cite_start]**The Sparsity Profile**: Exactly 12 rows contain explicit missing values (`NaN`) for the `second` (bottomwear) attribute.
 * [cite_start]**The Structural Insight**: Cross-referencing revealed that these 12 rows belong exclusively to the 15 female design tracks [cite: 1][cite_start]—representing one-piece garments like the *Women Bodycon Midi Length Dress (Fyre Rose)* [cite: 1][cite_start], *Bodycon Midi Dress (MULVARI)* [cite: 2][cite_start], or the *Ruched Asymmetrical Midi Dress (MANGO)* [cite: 4] where separate bottomwear items do not exist.
 
-> 🛠️ **Core Architectural Strategy**: Evaluating single items independently would incorrectly flag these records as missing data and break composition rules. To preserve designer combination synergy and bypass item-level gaps safely, this system utilizes an **Outfit-Level Vector Model**, indexing entire stylized configurations together.
+>  **Core Architectural Strategy**: Evaluating single items independently would incorrectly flag these records as missing data and break composition rules. To preserve designer combination synergy and bypass item-level gaps safely, this system utilizes an **Outfit-Level Vector Model**, indexing entire stylized configurations together.
 
+API Conflict Resolution Ledger (Overcoming Routing & Overload Errors)
+
+During rapid front-end testing and video recording, the application encountered critical API layer constraints—specifically downstream model routing conflicts (HTTP 404) and rate-limiting quota drops (HTTP 429/409 Resource Conflicts). These were systematically resolved using advanced full-stack optimization strategies:
+1. The Glitch: API Version & Model Mismatch (HTTP 404)
+
+    The Cause: Legacy target model strings (such as models/gemini-1.5-flash) returned severe connection dropouts because the cloud endpoints were deprecated or restricted on Google's backend versioning rules.
+
+    The Fix: Refactored the core engine execution layer to connect directly to the active, stable live service alias gemini-flash-latest. This restored immediate connectivity and ensured long-term endpoint stability.
 ---
 
 ##  High-Dimensional RAG Data Pipeline Workflow
